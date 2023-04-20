@@ -54,7 +54,7 @@ In the deployment window “Deployed Contracts”, set the parameters for the ba
 
 ## Authors
 
-NTCIAN Josh
+NTCIAN Jenevive
 <br>
 [Discord: @viveee](https://discordapp.com/users/viveee#0578)
 
