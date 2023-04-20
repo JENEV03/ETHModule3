@@ -1,4 +1,3 @@
-# ETHModule3
 # My Token
 
 The main objective of this solidity program is to implement a token contract that enables users to mint and burn tokens. Additionally, the program allows for the tracking of balances associated with specific addresses, and employs conditional statements to ensure that certain processes are carried out only when feasible.
@@ -42,3 +41,23 @@ contract MyToken {
             }
         }
      }
+```
+
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.18" (or another compatible version), and then click on the "Compile myToken.sol" button.
+
+To deploy the contract, click on the "Deploy and Run Transactions" button. This will open a new window that allows you to deploy the contract. Do not forget to select the “MyToken” contract before deploying.
+
+In the deployment window “Deployed Contracts”, set the parameters for the balance, mint, and burn functions. 
+* To mint new tokens, input the address of the recipient and the number of tokens you want to mint and click transact. 
+* To burn tokens, input the address of the recipient and the number of tokens you want to burn and click transact. 
+* To see current balances of the address, input the address of the recipient and the number of tokens you want to mint and click call. You can also see the total supply by clicking the “totalSupply” button.
+
+## Authors
+
+NTCIAN Josh
+<br>
+[Discord: @viveee](https://discordapp.com/users/viveee#0578)
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
