@@ -18,20 +18,27 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
+
 contract MyToken {
-    string public tokenName = "JENEVIVE";
-    string public tokenAbbrv = "JEN";
-    uint public totalSupply = 0;
     
-    mapping(address => uint) public balances;
-    function mint (address _address, uint _value) public {
-        totalSupply += _value;
-        balances[_address] += _value;
-    }
-    function burn (address _address, uint _value) public {
-        if(balances[_address] >= _value ) {
-            totalSupply -= _value;
-            balances[_address] -= _value;
+    // public variables here
+        string public name = "JENEVIVE";
+        string public abbrv = "JEN";
+        uint public supply = 0;
+
+    // mapping variable here
+        mapping(address => uint) public bal;
+
+    // mint function
+        function mint(address add, uint val) public{
+            supply += val;
+            bal[add] += val;
         }
-    }
-}
+    // burn function
+        function burn(address add, uint val) public{
+            if(bal[add] >= val){
+                supply -= val;
+                bal[add] -= val;
+            }
+        }
+     }
